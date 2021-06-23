@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 20px 20px 40px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.postHeader {
+  margin-left: 20px;
+  width: 50vw;
+}
+
+.under_title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.body {
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 20px;
+  width: 50vw;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 27px;
+  border-top: solid 1px #cad3c8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.under_title .buttons {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.under_title .buttons .delete {
+  margin-left: 10px;
+}
+
+.delete:hover {
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}
+
+.edit:hover {
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}
+
+.auth_date .createdDate {
+  font-size: 12px;
+  margin-top: 5px;
+  padding-bottom: 20px;
+  color: #636e72;
+}

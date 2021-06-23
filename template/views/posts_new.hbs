@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/posts_new.css">
+    {{>googleFont}}
+    <title>New Posts</title>
+</head>
+<body>
+    <h1><a href="/posts?limit=5&page=1" class="boardTitle">Board</a></h1>
+    <form action="/posts/new" method="post" class="newPost">
+        <input type="text" name="title" class="title" placeholder="Title here.">
+        <div class="bio">
+            <input type="text" name="author" placeholder="Your Name" class="author">
+            <input type="password" name="password" placeholder="Password" class="password">
+        </div>
+        <div class="content">
+            <textarea class="body" name="body" id="" cols="40" rows="20" placeholder="Please enter your content."></textarea>
+            <input class="submitBtn" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

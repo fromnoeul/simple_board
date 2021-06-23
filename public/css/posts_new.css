@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 20px 20px 40px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+input {
+  border: none;
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  text-align: left;
+  border: none;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+.bio .author {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.bio .password {
+  font-size: 18px;
+}
+
+.content {
+  width: 50vw;
+  margin-left: 20px;
+  padding-top: 20px;
+  border-top: solid 1px #cad3c8;
+}
+
+.content .body {
+  width: 47vw;
+  height: 25vw;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 20px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  border: none;
+}
+
+.content .submitBtn {
+  margin-left: calc(100% - 56.031px);
+  background-color: white;
+  font-size: 18px;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 20px 20px 40px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  margin-left: 20px;
+  width: 25vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+form {
+  margin-left: 20px;
+  width: 30vw;
+}
+
+form .deletebox {
+  width: 25vw;
+  margin-left: 10px;
+  border: solid 4px black;
+}
+
+.type {
+  margin-bottom: 15px;
+}
+
+.deletePost {
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+.deleteBtn {
+  margin-left: 5vw;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}

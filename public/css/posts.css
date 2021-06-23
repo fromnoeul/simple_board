@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 20px 20px 40px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.this_page {
+  background-color: black;
+  color: white;
+}
+
+.btn_pages {
+  display: flex;
+}
+
+.pages li {
+  list-style: none;
+  float: left;
+  margin: auto 0.5vw;
+}
+
+.pages {
+  margin: 0px;
+  padding: 0px;
+}
+
+.posts {
+  width: 50vw;
+  border-collapse: collapse;
+  margin: auto 20px;
+  padding-right: 20px;
+}
+
+.posts thead {
+  height: 3.5vw;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: solid 1px #cad3c8;
+}
+
+.posts tbody td {
+  height: 3vw;
+  padding-left: 40px;
+  border-bottom: solid 1px #cad3c8;
+  font-size: 14px;
+}
+
+.posts tr a:hover {
+  text-decoration: underline;
+}
+
+.btn_pages {
+  padding: 20px;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+.btn_pages .button {
+  width: 50px;
+  height: 21px;
+  text-align: center;
+}
+
+.btn_pages .button:hover {
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}
+
+.btn_pages .pages li {
+  margin: 1px;
+}
+.btn_pages .pages li a {
+  margin: 0px;
+  width: 19px;
+  text-align: center;
+}
+.btn_pages .pages li a:hover {
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  color: white;
+}
+
+.limit #n_posts {
+  border: none;
+  font-size: 15px;
+}
+
+.limit #n_posts:hover {
+  cursor: pointer;
+}

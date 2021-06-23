@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/posts.css">
+    {{>googleFont}}
+    <title>Board</title>
+</head>
+<body>
+    <h1><a href="/posts?limit=5&page=1" class="boardTitle">Board</a></h1>
+    <table class="posts">
+        <thead class="tableHead">
+            <td>Title</td>
+            <td>Author</td>
+            <td>Date</td>
+        </thead>
+        <colgroup>
+            <col width="50%">
+            <col width="15%">
+            <col width="15%">
+        </colgroup>
+        {{#each boardData}}
+            <tr>
+                <td><a href="/posts/{{seq}}">{{title}}</a></td>
+                <td>Anony{{seq}}</td>
+                <td>{{dateFormat createdAt}}</td>
+            </tr>
+        {{/each}}
+    </table>
+    <div class="btn_pages">
+        <div><a class="button" href="/posts/new">New</a></div>
+        <div>
+            <ul class="pages">
+                {{#isHiddenPrev page}}
+                {{else}}
+                    <li><a class="previous_page" href="/posts?limit={{limit}}&page={{decremented page}}"><</a></li>
+                {{/isHiddenPrev}}
+
+                {{#each pageArray}}
+                    <li><a id="{{this}}" href="/posts?limit={{../limit}}&page={{this}}">{{this}}</a></li>
+                {{/each}}
+
+                {{#isHiddenNext page numOfPage}}
+                {{else}}
+                    <li><a class="next_page" href="/posts?limit={{limit}}&page={{incremented page}}">></a></li>
+                {{/isHiddenNext}}
+            </ul>    
+        </div>
+        <div class="limit">
+            <select name="limit" id="n_posts" class="pageLimit">
+                    <option value="5">5 Posts</option>
+                    <option value="10">10 Posts</option>
+                    <option value="15">15 Posts</option>
+            </select>
+        </div>
+    </div>
+    
+    <script src="/js/posts.js"></script>
+</body>
+</html>

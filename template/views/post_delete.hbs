@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/post_delete.css">
+    {{>googleFont}}
+    <title>Edit Posts</title>
+</head>
+<body>
+    <h1><a href="/posts?limit=5&page=1" class="boardTitle">Board</a></h1>
+    <h2 class="type">Type Password to delete the post</h2>
+    <form action="/posts/{{seq}}/delete" method="post" class="deletePost">
+        <div class="deletebox">
+            <input type="password" name="author" class="deletePost" placeholder="Type your name here">
+            <input type="password" name="password" class="deletePost" placeholder="Type password here">
+            <input type="submit" value="Delete" class="deleteBtn">
+        </div>
+    </form>
+</body>
+</html>
