@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 autoIncrement.initialize(mongoose.connection);
 
-const postSchema = mongoose.Schema({
+const postSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,

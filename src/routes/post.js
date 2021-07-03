@@ -26,7 +26,6 @@ router.get('/posts/new', (req, res) => {
     res.render('posts_new');
 })
 router.post('/posts/new', async (req, res) => {
-    console.log(req.body);
     try {
         const post = new Post(req.body);
         await post.save();

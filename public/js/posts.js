@@ -18,7 +18,7 @@ const optionSelected = (n_posts) => {
     //  currQuery[0] => limit=n
     //  currQuery[1] => page=n
     const currQuery = window.location.search.slice(1).split("&");
-    location.href = window.location.href.replace(currQuery[0], `limit=${selectedValue}`);
+    location.href = window.location.href.replace(currQuery[0] + '&' + currQuery[1], `limit=${selectedValue}&page=1`);
 }
 
 const main = () => {
